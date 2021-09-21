@@ -1,7 +1,190 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Helvetica';
+}
+
+/* "Circular Sp UI v3 T Bold"; src: url("//db.onlinewebfonts.com/t/4504d77ae8b1517de38b53c4c4ec6461.eot"); src: url("//db.onlinewebfonts.com/t/4504d77ae8b1517de38b53c4c4ec6461.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4504d77ae8b1517de38b53c4c4ec6461.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4504d77ae8b1517de38b53c4c4ec6461.woff") format("woff"), url("//db.onlinewebfonts.com/t/4504d77ae8b1517de38b53c4c4ec6461.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4504d77ae8b1517de38b53c4c4ec6461.svg#Circular Sp UI v3 T Bold") format("svg");*/
+/*-----navbar-----*/
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    wrap: nowrap;
+    justify-content: space-between;
+    background-color: white;
+    top: 0;
+    height: 15vh;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+}
+
+.spotify-logo {
+    height: 85%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+
+/*-----section-1-----*/
+
+#section-1 {
+    background-color: black;
+    margin-top: 15vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/images/landing.jpg");
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: 50px;
+}
+
+#section-1 p {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+}
+
+/*-----section-2-----*/
+
+#section-2 {
+    height: 80vh;
+}
+
+#section-2 h2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    text-decoration: underline #00B172;
+    text-underline-offset: 15px;
+    padding: 10px;
+    color: #1A1A1A;
+    font-size: 2.7em;
+}
+
+.block-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 30px;
+}
+
+.block-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+#section-2 img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: contain;
+}
+
+#section-2 p {
+    margin: 20px;
+    font-size: 1.3em;
+    padding: 10px;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+#section-2 h3 {
+    font-size: 1.6em;
+    color: #00B172;
+    margin: 10px;
+}
+
+/*-----footer-----*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    margin: 40px;
+    background-color: #00B172;
+    background-image: url("/images/spotify-icon-white.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10%;
+    color:white;
+    padding: 20px;
+}
+
+footer h3 {
+    font-size: 2em;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    height: 20%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: auto;
+    width: 40%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.footer-container h4 {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+}
+
+.footer-container p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.big-footer-container {
+    padding: 50px;
+    height: 100%;
+}
+
+footer img {
+    height: 80%;
+    margin: 50px;
+    z-index: 1;
+}
+
 /*
 Colors:
 
-Text: 1A1A1A
+Text: #1A1A1A 
 Green: #00B172
 White: #FFF
 
